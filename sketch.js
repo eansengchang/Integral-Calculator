@@ -37,8 +37,8 @@ function setup() {
 }
 
 function calculateArea() {
-    domainStart = int(lowerBoundInput.value())
-    domainEnd = int(upperBoundInput.value())
+    domainStart = float(lowerBoundInput.value())
+    domainEnd = float(upperBoundInput.value())
     errorText.html("Errors will be displayed here...")
     if (redrawFunction() == 1) {
         let area = 0;
