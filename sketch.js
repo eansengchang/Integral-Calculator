@@ -119,7 +119,7 @@ function draw() {
     xLabelDiff = 10 ** (floor(log((domainEnd - domainStart) / 2) / log(10)))
 
     //draw x-axis labels
-    for (let i = round(domainStart); i <= domainEnd; i += xLabelDiff) {
+    for (let i = round(graphStart); i <= graphEnd; i += xLabelDiff) {
         let integer = map(i, domainStart, domainEnd, padding, width - padding);
         line(integer, xIntercept - 5, integer, xIntercept + 5)
     }
